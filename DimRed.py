@@ -62,7 +62,11 @@ def DimRed(dimLayer, dimSVD, pastaDestino, nomeData, nomeModelo, tipo, decomp):
                              
                             nomeGraph = modelo.replace("Dados_", "")
                             nomeGraph = nomeGraph.replace("Mtx_Tudo.npy", ": SVD")
+                            plt.ylabel("Valores Singulares")
+                            plt.xlabel("Posição dos Valores Singulares na diagonal da matriz")
                             plt.title(nomeGraph)
+                            
+
                             
                             ax.xaxis.set_major_locator(MaxNLocator(integer=True))
                              
